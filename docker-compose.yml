@@ -12,7 +12,7 @@ services:
       - twitter-docker-network
 
   backend:
-    build: ./api
+    build: ./backend
     container_name: twitter-docker-api
     command: npm run start
     restart: unless-stopped
